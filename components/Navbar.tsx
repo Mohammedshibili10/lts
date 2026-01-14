@@ -1,0 +1,94 @@
+import Image from 'next/image'
+import React from 'react'
+import { FiMenu } from 'react-icons/fi'
+import logo from "@/public/images/LT Smart Logo.png"
+// import img1 from "@/public/images/world.png"
+// import img2 from "@/public/images/instagram.png"
+// import img3 from "@/public/images/linkedin.png"
+// import img4 from "@/public/images/facebook.png"
+import { FaLinkedin } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaFacebook } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
+import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet';
+
+const menuItems = ["Home", "About", "Products", "Solutions", "Works", "Contact"];
+export default function Navbar() {
+  return (
+    <div className='flex flex-col md:flex-row fixed top-0 left-0 right-0  justify-between padding-x'>
+      <div className='flex items-center gap-1.5'>
+        <Sheet>
+          <SheetTrigger>  <FiMenu className='text-[#76B828] ' size={20} />
+          </SheetTrigger>
+          <SheetContent side="right"
+            className="bg-black text-white w-full sm:w-[420px] border-none p-0">
+            <div className="h-[730px] w-[612px] flex flex-col justify-center px-10 relative">
+
+              {/* Close button */}
+              <SheetClose asChild>
+                <button className="absolute top-6 right-6 text-sm tracking-widest text-gray-400 hover:text-white">
+                  CLOSE
+                </button>
+              </SheetClose>
+
+              {/* Menu */}
+              <nav className="flex flex-col gap-6 text-2xl font-medium">
+                {menuItems.map((item, index) => (
+                  <div key={item} className="flex flex-col">
+                    <a
+                      href={`#${item.toLowerCase()}`}
+                      className="hover:opacity-70 transition"
+                    >
+                      {item}
+                    </a>
+
+                    {/* Divider */}
+                    {index !== menuItems.length - 1 && (
+                      <div className="h-[1px] w-full bg-white/10 mt-4" />
+                    )}
+                  </div>
+                ))}
+              </nav>
+            </div>
+          </SheetContent>
+        </Sheet>
+        <h1 className='text-white text-base font-medium'>MENU</h1>
+      </div>
+      <div className='flex'>
+        <Image
+          src={logo}
+          alt="LTS Logo"
+          className='w-40 '
+        />
+      </div>
+      <div className='flex justify-between items-center gap-[26px]'>
+        {/* <Image
+          src={img1}
+          alt='world logo'
+        /> */}
+       <div className='flex items-center gap-2'>
+          <TbWorld className='text-white ' size={20} />
+          <h1 className='text-white text-base font-medium'>
+            UAE
+          </h1>
+       </div>
+        {/* <Image
+          src={img3}
+          alt='linkedin logo'
+        /> <Image
+          src={img2}
+          alt='instagram logo'
+        />
+        <Image
+          src={img4}
+          alt='facebook logo'
+        /> */}
+        <div className='flex items-center gap-7'>
+          <FaLinkedin className='text-white' size={21} />
+          <RiInstagramFill className='text-white' size={21} />
+          <FaFacebook className='text-white' size={21} />
+        </div>
+      </div>
+    </div>
+  )
+}
