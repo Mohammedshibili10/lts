@@ -10,7 +10,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebook } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
-import { Sheet, SheetClose, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet';
+import { Sheet, SheetClose, SheetContent,SheetTrigger } from './ui/sheet';
 
 const menuItems = ["Home", "About", "Products", "Solutions", "Works", "Contact"];
 export default function Navbar() {

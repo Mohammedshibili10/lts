@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import logo from "@/public/images/LT Smart Logo.png"
-import { FaFacebook, FaLinkedin } from 'react-icons/fa'
+import {  FaLinkedin } from 'react-icons/fa'
 import { RiInstagramFill } from 'react-icons/ri'
 
 const menuItems = ["Home", "About", "Service", "Brand", "Contact"];
@@ -22,7 +22,7 @@ function Footer() {
 
                       {/* Menu */}
                       <nav className="flex  text-[14px] font-normal gap-[24px] text-white">
-                          {menuItems.map((item, index) => (
+                          {menuItems.map((item) => (
                               <div key={item} className="flex flex-col">
                                   <a
                                       href={`#${item.toLowerCase()}`}

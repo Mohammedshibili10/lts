@@ -1,5 +1,5 @@
 import * as z from "zod";
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface ActionResponse<T = any> {
     success: boolean;
     message: string;
@@ -8,6 +8,7 @@ export interface ActionResponse<T = any> {
     };
     inputs?: T;
 }
+/* eslint-enable @typescript-eslint/no-explicit-any */
 export const formSchema = z.object({
     name: z.string({ error: "This field is required" }),
     "Phone Number": z.email({ error: "Please enter a valid email" }),

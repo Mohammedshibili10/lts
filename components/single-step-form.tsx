@@ -11,11 +11,8 @@ import { Check } from "lucide-react";
 import {
     Field,
     FieldGroup,
-    FieldContent,
     FieldLabel,
-    FieldDescription,
     FieldError,
-    FieldSeparator,
 } from "@/components/ui/field";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -24,6 +21,7 @@ import { Textarea } from "@/components/ui/textarea";
 type Schema = z.infer<typeof formSchema>;
 
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export function DraftForm() {
     const form = useForm<Schema>({
         resolver: zodResolver(formSchema as any),
@@ -37,6 +35,7 @@ export function DraftForm() {
             // TODO: show error message
         },
     });
+    /* eslint-enable @typescript-eslint/no-explicit-any */
     const handleSubmit = form.handleSubmit(async (data: Schema) => {
         formAction.execute(data);
     });
