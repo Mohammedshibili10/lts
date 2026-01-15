@@ -16,9 +16,9 @@ export default function Home() {
     <SolutionSection/>
     <ProductSection/>
     <WorkSection/>
-    {/* <BrandSection/> */}
+    <BrandSection/>
     <ContactSection/>
-    {/* <GoogleMapEmbed/> */}
+    <GoogleMapEmbed/>
    </div>
   );
 }
