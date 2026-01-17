@@ -50,7 +50,7 @@ function AboutSection() {
                             <h1 className=' text-xl md:text-4xl text-[#76B828] font-semibold'>
                                 25+
                             </h1>
-                            <p className='text-white text-md text-xl lg:text-3xl xl:text-4xl'>
+                            <p className='text-white text-sm md:text-xl lg:text-3xl xl:text-4xl'>
                                 Years of <br />Experience
                             </p>
                         </div>
@@ -62,7 +62,7 @@ function AboutSection() {
                             <h1 className='text-xl md:text-4xl text-[#76B828] font-semibold' >
                                 500+
                             </h1>
-                            <p className='text-white  text-md text-xl lg:text-3xl xl:text-4x'>
+                            <p className='text-white  text-sm md:text-xl lg:text-3xl xl:text-4x'>
                                 Completed <br />Projects
                             </p>
                         </div>
@@ -74,7 +74,7 @@ function AboutSection() {
                             <h1 className='text-xl md:text-4xl  text-[#76B828] font-semibold'>
                                 100%
                             </h1>
-                            <p className='text-white text-md md:text-xl lg:text-3xl xl:text-4x'>
+                            <p className='text-white text-sm md:text-xl lg:text-3xl xl:text-4x'>
                                 Client <br /> Satisfaction
                             </p>
                         </div>
@@ -86,7 +86,7 @@ function AboutSection() {
                             <h1 className='text-xl md:text-4xl  text-[#76B828] font-semibold'>
                                 200+
                             </h1>
-                            <p className='text-white text-md md:text-xl lg:text-3xl xl:text-4x'>
+                            <p className='text-white text-sm md:text-xl lg:text-3xl xl:text-4x'>
                                 Employees
                             </p>
                         </div>

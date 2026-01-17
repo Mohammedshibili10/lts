@@ -19,7 +19,7 @@ function BrandSection() {
             />
           </div>
 
-          <button className='absolute left-1/2 -translate-x-1/2 bottom-10 sm:bottom-55 
+          <button className='absolute left-1/2 -translate-x-1/2 bottom-45 sm:bottom-55 
             w-40 sm:w-45 h-12 sm:h-15 bg-white rounded-xl 
             flex justify-center items-center gap-1 text-base sm:text-lg'>
             <IoMdPause className='w-6 h-6 text-[#76B828]' />
@@ -37,7 +37,7 @@ function BrandSection() {
             />
           </div>
 
-          <button className='absolute left-1/2 -translate-x-1/2 bottom-10 sm:bottom-55 
+          <button className='absolute left-1/2 -translate-x-1/2 bottom-45 sm:bottom-55 
             w-40 sm:w-45 h-12 sm:h-15 bg-white rounded-xl 
             flex justify-center items-center gap-1 text-base sm:text-lg'>
             <IoMdPause className='w-6 h-6 text-[#76B828]' />
