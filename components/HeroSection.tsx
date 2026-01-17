@@ -5,42 +5,53 @@ import line from "@/public/images/line.png"
 import { FaArrowRight } from "react-icons/fa";
 
 function HeroSection() {
-    return (
-        <section className='relative min-h-screen flex items-center justify-center overflow-hidden mx-auto px-6 '>
-            <div className='absolute inset-0 z-0"'>
-                <Image
-                    src={heroimg}
-                    alt='here image '
-                    className='w-full h-screen'
-                />
-            </div>
-            <div className="relative container mx-auto  text-center z-20  max-w-7xl">
-                <div className=' flex flex-col text-left'>
-                    <h1 className=' text-[37px] md:text-[64px] font-medium lg:max-w-[65%] leading-11 lg:leading-18 mb-5.5 text-white'>
-                        integrated smart solutions for safer smarter spaces
-                    </h1>
-                    <p className='text-[16px] font-medium leading-6 max-w-[90%] lg:max-w-[26%] mb-5.5 text-white'>
-                        Seamlessly connect, Protect & Automate your spaces with systems designed for efficiency, Comfort & Security
-                    </p>
-                </div>
-                <div>
-                    <div   className='flex items-center gap-2'>
-                        <h1 className='text-white'>Explore Our Solutions</h1>
-                        {/* <FaArrowRight/> */}
-                        <button className="w-8.5 h-8.5 rounded-full bg-gradient-to-r from-[#76B828] to-[#C7D300]  text-white flex items-center justify-center hover:bg-black transition">
-                            <FaArrowRight size={18} />
-                        </button>
-                    </div>
-                    {/* <hr className='w-24 h-0.5 text-[#76B828]'/> */}
-                    <Image  
-                    src={line}
-                    alt='line'
-                        className='w-24'
-                    />
-                </div>
-            </div>
-        </section>
-    )
+  return (
+    <section className="relative h-screen flex items-center overflow-hidden">
+      
+      {/* Background image */}
+      <Image
+        src={heroimg}
+        alt="Hero background"
+        fill
+        priority
+        className="object-cover"
+      />
+
+      {/* Content */}
+      <div className="relative z-10 w-full max-w-[1440px]  px-4 sm:px-6 md:px-10 lg:px-25">
+        
+        <div className="max-w-5xl text-center sm:text-left">
+          
+          <h1 className="   text-white font-medium leading-tight   text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[74px]   mb-5 ">
+            Integrated Smart Solutions For Safer Smarter Spaces
+          </h1>
+
+          <p className="  text-white  text-sm sm:text-base md:text-lg lg:text-xl  leading-relaxed  max-w-xl  mb-6">
+            Seamlessly connect, Protect & Automate your spaces with systems
+            designed for efficiency, Comfort & Security
+          </p>
+
+          {/* Button */}
+          <div className="flex justify-center sm:justify-start items-center gap-3">
+            <h2 className="text-white font-medium text-base sm:text-lg md:text-xl">
+              Explore Our Solutions
+            </h2>
+
+            <button className=" w-10 h-10 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-gradient-to-r from-[#76B828] to-[#C7D300] text-white flex items-center justify-center transition ">
+              <FaArrowRight size={18} />
+            </button>
+          </div>
+
+          {/* Line */}
+          <Image
+            src={line}
+            alt="line"
+            className="w-20 sm:w-24  mx-23 sm:mx-0"
+          />
+        </div>
+      </div>
+    </section>
+  )
 }
 
 export default HeroSection

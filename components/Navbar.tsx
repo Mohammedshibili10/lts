@@ -15,14 +15,18 @@ import { Sheet, SheetClose, SheetContent,SheetTrigger } from './ui/sheet';
 const menuItems = ["Home", "About", "Products", "Solutions", "Works", "Contact"];
 export default function Navbar() {
   return (
-    <div className='flex flex-col md:flex-row fixed top-0 left-0 right-0  justify-between padding-x'>
+    <div className="fixed top-0 inset-x-0 w-full max-w-full flex items-center justify-between px-4 sm:px-5 lg:px-25 py-6 overflow-x-hidden">
+
       <div className='flex items-center gap-1.5'>
         <Sheet>
-          <SheetTrigger>  <FiMenu className='text-[#76B828] ' size={20} />
+          <SheetTrigger>  <FiMenu className='text-[#76B828]  w-10 h-10  '  />
           </SheetTrigger>
-          <SheetContent side="right"
-            className="bg-black text-white w-full sm:w-[420px] border-none p-0">
-            <div className="h-[730px] w-[612px] flex flex-col justify-center px-10 relative">
+            <SheetContent
+  side="right"
+  className="bg-black text-white w-full max-w-full sm:w-[420px] border-none p-0 overflow-x-hidden">
+
+          <div className="h-screen w-full max-w-full flex flex-col justify-center px-6 sm:px-10 relative overflow-x-hidden">
+
 
               {/* Close button */}
               <SheetClose asChild>
@@ -52,23 +56,27 @@ export default function Navbar() {
             </div>
           </SheetContent>
         </Sheet>
-        <h1 className='text-white text-base font-medium'>MENU</h1>
+        <h1 className='hidden md:block text-white md:text-xl lg:text-3xl font-medium'>MENU</h1>
       </div>
       <div className='flex'>
-        <Image
-          src={logo}
-          alt="LTS Logo"
-          className='w-40 '
-        />
+       <Image
+  src={logo}
+  alt="LTS Logo"
+  width={160}
+  height={60}
+  priority
+  className="w-[120px] sm:w-[140px] lg:w-[200px] h-auto lg:ml-20"
+/>
+
       </div>
       <div className='flex justify-between items-center gap-[26px]'>
         {/* <Image
           src={img1}
           alt='world logo'
         /> */}
-       <div className='flex items-center gap-2'>
-          <TbWorld className='text-white ' size={20} />
-          <h1 className='text-white text-base font-medium'>
+       <div className='hidden md:flex items-center  gap-2'>
+          <TbWorld className='text-white md:w-7 lg:w-10 md:h-7 lg:h-10 '  />
+          <h1 className='text-white text-lg font-medium'>
             UAE
           </h1>
        </div>
@@ -83,10 +91,10 @@ export default function Navbar() {
           src={img4}
           alt='facebook logo'
         /> */}
-        <div className='flex items-center gap-7'>
-          <FaLinkedin className='text-white' size={21} />
-          <RiInstagramFill className='text-white' size={21} />
-          <FaFacebook className='text-white' size={21} />
+        <div className='hidden md:flex items-center gap-7'>
+          <FaLinkedin className='text-white md:w-6 lg:w-10 md:h-6 lg:h-10'  />
+          <RiInstagramFill className='text-white md:w-7 lg:w-10 md:h-7 lg:h-10'  />
+          <FaFacebook className='text-white md:w-7 lg:w-10 md:h-7 lg:h-10'  />
         </div>
       </div>
     </div>

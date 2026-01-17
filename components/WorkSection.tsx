@@ -12,7 +12,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 
 function WorkSection() {
     return (
-        <section className="relative w-full min-h-screen overflow-hidden">
+        <section className="relative w-full  overflow-hidden">
             <div className="absolute inset-0 -z-10">
                 <Image
                     src={Img}
@@ -24,28 +24,28 @@ function WorkSection() {
                 <div className="absolute inset-0 bg-gradient-to-r from-[#111111CC] to-[#4c4949]" />
             </div>
 
-            <div className="relative container mx-auto px-6 max-w-7xl py-16">
-                <div className="flex justify-between items-center">
-                    <h1 className="text-[38px] font-medium text-white">Our Work</h1>
+            <div className="relative  px-10 lg:px-25  py-20">
+                <div className="flex justify-between items-center pb-10">
+                    <h1 className="text-[25px] md:text-[35px] lg:text-[40px] xl:text-[48px]  text-white">Our Work</h1>
 
                     <div className="flex gap-2">
-                        <button className="w-8.5 h-8.5 rounded-full bg-gradient-to-r from-[#76B828] to-[#C7D300] text-white flex items-center justify-center">
-                            <FaArrowLeft size={18} />
+                        <button className="w-12 h-12 rounded-full bg-gradient-to-r from-[#76B828] to-[#C7D300] text-white flex items-center justify-center">
+                            <FaArrowLeft size={25} />
                         </button>
-                        <button className="w-8.5 h-8.5 rounded-full bg-gradient-to-r from-[#76B828] to-[#C7D300] text-white flex items-center justify-center">
-                            <FaArrowRight size={18} />
+                        <button className="w-12 h-12 rounded-full bg-gradient-to-r from-[#76B828] to-[#C7D300] text-white flex items-center justify-center">
+                            <FaArrowRight size={25} />
                         </button>
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5  mb-10">
                     {[Img1, Img2, Img3, Img4, Img5, Img6].map((img, i) => (
                         <div key={i} className="relative w-full aspect-[4/3] rounded-sm overflow-hidden">
                             <Image
                                 src={img}
                                 alt={`work ${i}`}
                                 fill
-                                className="object-cover"
+                                className="object-cover "
                             />
                         </div>
                     ))}

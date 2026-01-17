@@ -15,6 +15,7 @@ export const Logo01 = () => (
   <Image
   src={logo1}
   alt="logo"
+ 
   />
  </div>
 );
