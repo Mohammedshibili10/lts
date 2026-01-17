@@ -17,7 +17,7 @@ function ProductSection() {
                 <Image
                     src={img}
                     alt="product img"
-                    className=' w-full md:h-fit lg:h-[877px] object-cover'
+                    className=' w-full h-[677] md:h-[877px] object-cover  '
                 />
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#060606] to-[#06060633]" />

@@ -32,6 +32,7 @@ function HeroSection() {
           </p>
 
           {/* Button */}
+          <div className='pl-5'>
           <div className="flex justify-center sm:justify-start items-center gap-3">
             <h2 className="text-white font-medium text-base sm:text-lg md:text-xl">
               Explore Our Solutions
@@ -46,8 +47,9 @@ function HeroSection() {
           <Image
             src={line}
             alt="line"
-            className="w-20 sm:w-24  mx-23 sm:mx-0"
+            className="w-20 sm:w-24  mx-18 sm:mx-0"
           />
+          </div>
         </div>
       </div>
     </section>

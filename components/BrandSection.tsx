@@ -6,7 +6,7 @@ import { IoMdPause } from "react-icons/io";
 
 function BrandSection() {
   return (
-    <section className='px-6 sm:px-15 lg:px-25 py-10 sm:py-20 bg-[#F5FFE4]'>
+    <section className='px-6 sm:px-15 lg:px-25 pt-10 sm:pt-20 bg-[#F5FFE4]'>
  <div className='flex flex-col lg:flex-row gap-10'>
 
        
@@ -55,7 +55,7 @@ function BrandSection() {
       </div>
 
     
-      <div className='py-20 sm:py-30'>
+      <div className='py-20 sm:pt-20'>
         <div className='flex items-center gap-6'>
           <h1 className='text-[#171717] 
             w-auto min-w-max

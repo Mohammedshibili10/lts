@@ -19,7 +19,7 @@ export default function Navbar() {
 
       <div className='flex items-center gap-1.5'>
         <Sheet>
-          <SheetTrigger>  <FiMenu className='text-[#76B828]  w-10 h-10  '  />
+          <SheetTrigger>  <FiMenu className='text-[#76B828]  w-8 h-8  '  />
           </SheetTrigger>
             <SheetContent
   side="right"
@@ -29,11 +29,11 @@ export default function Navbar() {
 
 
               {/* Close button */}
-              <SheetClose asChild>
+              {/* <SheetClose asChild>
                 <button className="absolute top-6 right-6 text-sm tracking-widest text-gray-400 hover:text-white">
-                  CLOSE
+                 
                 </button>
-              </SheetClose>
+              </SheetClose> */}
 
               {/* Menu */}
               <nav className="flex flex-col gap-6 text-2xl font-medium">
@@ -56,7 +56,7 @@ export default function Navbar() {
             </div>
           </SheetContent>
         </Sheet>
-        <h1 className='hidden md:block text-white md:text-xl lg:text-3xl font-medium'>MENU</h1>
+        <h1 className='hidden md:block text-white md:text-xl lg:text-xl font-medium'>MENU</h1>
       </div>
       <div className='flex'>
        <Image
@@ -75,7 +75,7 @@ export default function Navbar() {
           alt='world logo'
         /> */}
        <div className='hidden md:flex items-center  gap-2'>
-          <TbWorld className='text-white md:w-7 lg:w-10 md:h-7 lg:h-10 '  />
+          <TbWorld className='text-white md:w-7 lg:w-8 md:h-7 lg:h-8 '  />
           <h1 className='text-white text-lg font-medium'>
             UAE
           </h1>
@@ -92,9 +92,9 @@ export default function Navbar() {
           alt='facebook logo'
         /> */}
         <div className='hidden md:flex items-center gap-7'>
-          <FaLinkedin className='text-white md:w-6 lg:w-10 md:h-6 lg:h-10'  />
-          <RiInstagramFill className='text-white md:w-7 lg:w-10 md:h-7 lg:h-10'  />
-          <FaFacebook className='text-white md:w-7 lg:w-10 md:h-7 lg:h-10'  />
+          <FaLinkedin className='text-white md:w-6 md:h-6 '  />
+          <RiInstagramFill className='text-white md:w-7  md:h-7 '  />
+          <FaFacebook className='text-white md:w-7 md:h-7 '  />
         </div>
       </div>
     </div>

@@ -56,13 +56,13 @@ function AboutSection() {
                         </div>
 
                     </div>
-                    <div className='flex gap-1  px-2 md:gap-[29px]'>
+                    <div className='flex gap-1  px-1 md:gap-[29px]'>
                         <div className="w-[2px] h-[82px] md:h-[130px] bg-[#4D4D4D]" />
                         <div className='flex flex-col space-y-1 md:space-y-4'>
                             <h1 className='text-xl md:text-4xl text-[#76B828] font-semibold' >
                                 500+
                             </h1>
-                            <p className='text-white  text-sm md:text-xl lg:text-3xl xl:text-4x'>
+                            <p className='text-white  text-sm md:text-xl lg:text-3xl xl:text-4xl'>
                                 Completed <br />Projects
                             </p>
                         </div>
@@ -74,19 +74,19 @@ function AboutSection() {
                             <h1 className='text-xl md:text-4xl  text-[#76B828] font-semibold'>
                                 100%
                             </h1>
-                            <p className='text-white text-sm md:text-xl lg:text-3xl xl:text-4x'>
+                            <p className='text-white text-sm md:text-xl lg:text-3xl xl:text-4xl'>
                                 Client <br /> Satisfaction
                             </p>
                         </div>
                     </div>
-                    <div className='flex space-x-3 md:space-y-0 px-3 md:gap-[29px] '>
+                    <div className='flex space-x-3 md:space-y-0 px-1 md:gap-[29px] '>
                         <div className="w-[2px] h-[82px] md:h-[130px] bg-[#4D4D4D]" />
                         <div className='flex flex-col space-y-1 md:space-y-4'>
 
                             <h1 className='text-xl md:text-4xl  text-[#76B828] font-semibold'>
                                 200+
                             </h1>
-                            <p className='text-white text-sm md:text-xl lg:text-3xl xl:text-4x'>
+                            <p className='text-white text-sm md:text-xl lg:text-3xl xl:text-4xl'>
                                 Employees
                             </p>
                         </div>
