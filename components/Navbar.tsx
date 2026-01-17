@@ -15,7 +15,7 @@ import { Sheet, SheetClose, SheetContent,SheetTrigger } from './ui/sheet';
 const menuItems = ["Home", "About", "Products", "Solutions", "Works", "Contact"];
 export default function Navbar() {
   return (
-    <div className="fixed top-0 inset-x-0 w-full max-w-full flex items-center justify-between px-4 sm:px-5 lg:px-25 py-6 overflow-x-hidden">
+    <div className="fixed z-50 top-0 inset-x-0 w-full max-w-full flex items-center justify-between px-4 sm:px-5 lg:px-25 py-6 overflow-x-hidden">
 
       <div className='flex items-center gap-1.5'>
         <Sheet>

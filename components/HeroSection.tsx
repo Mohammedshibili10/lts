@@ -14,7 +14,7 @@ function HeroSection() {
         alt="Hero background"
         fill
         priority
-        className="object-cover"
+        className="absolute inset-0 object-cover z-0"
       />
 
       {/* Content */}
