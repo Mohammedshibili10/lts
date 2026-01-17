@@ -65,7 +65,7 @@ export default function Navbar() {
   width={160}
   height={60}
   priority
-  className="w-[120px] sm:w-[140px] lg:w-[200px] h-auto lg:ml-20"
+  className="w-[120px] sm:w-[140px] lg:w-[200px] h-auto  lg:pl-20"
 />
 
       </div>

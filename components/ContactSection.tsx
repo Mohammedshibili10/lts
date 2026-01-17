@@ -35,7 +35,7 @@ function ContactSection() {
             </h2>
 
             {/* Middle East */}
-            <div className="bg-[#76B8280F] border p-5 mb-4 max-w-[520px]">
+            <div className="bg-[#76B8280F] border p-5 mb-4 sm:w-full  lg:max-w-[520px]">
               <h3 className="text-[18px] sm:text-[22px] xl:text-[23px] font-medium mb-3">
                 Middle East
               </h3>
@@ -64,7 +64,7 @@ function ContactSection() {
             </div>
 
             {/* Europe */}
-            <div className="bg-[#76B8280F] border p-5 max-w-[520px]">
+            <div className="bg-[#76B8280F] border p-5 sm:w-full  lg:max-w-[520px]">
               <h3 className="text-[18px] sm:text-[22px] xl:text-[23px] font-medium mb-3">
                 Europe
               </h3>
