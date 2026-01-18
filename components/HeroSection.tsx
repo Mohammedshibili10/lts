@@ -47,7 +47,7 @@ function HeroSection() {
           <Image
             src={line}
             alt="line"
-            className="w-20 sm:w-24  mx-18 sm:mx-0"
+            className="w-20 sm:w-24  mx-18.5 sm:mx-0"
           />
           </div>
         </div>

@@ -8,7 +8,7 @@ function ProductSection() {
     return (
         <section className=' bg-[#111111] '>
             <div className='flex  lg:flex-row items-center justify-between  px-10 lg:px-25  py-12'>
-                <h1 className='text-[#171717] w-80 md:w-82 lg:w-100 text-[25px] md:text-[35px] lg:text-[40px] xl:text-[48px] font-medium text-white '>
+                <h1 className='text-[#171717] w-85 md:w-82 lg:w-100 text-[22px] md:text-[35px] lg:text-[40px] xl:text-[48px] font-medium text-white '>
                     Our Products
                 </h1>
                 <div className=' w-full mt-2 h-0.5 bg-gradient-to-r from-[#76B828] to-[#C7D300]' />
